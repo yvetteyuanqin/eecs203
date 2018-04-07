@@ -44,7 +44,7 @@ int main(int argc, char **argv)
 	/* Create a header */ 
 	header(ROWS, COLS, head);
 
-	ofile = "hw1ex1.ras";// this is the name of your output file, modify the name according to the requirements
+	ofile = "hw1tri.ras";// this is the name of your output file, modify the name according to the requirements
 
 	if (!(fp = fopen(ofile, "wb")))
 		fprintf(stderr, "error: could not open %s\n", ofile), exit(1);
