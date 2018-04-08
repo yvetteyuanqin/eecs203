@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define ROWS		512
-#define COLUMNS		512
+#define ROWS		480
+#define COLUMNS		640
 
 #define sqr(x)		((x)*(x))
 
@@ -15,7 +15,7 @@ int main( int argc, char **argv )
 	char		*ifile, *ofile;
 	unsigned char	image[ROWS][COLUMNS];
 
-	if ( argc != 4 )
+	if ( argc != 3 )
 	{
 	    fprintf( stderr, "usage: %s input output threshold\n", argv[0] );
 	    exit( 1 );
@@ -23,7 +23,7 @@ int main( int argc, char **argv )
 
 	ifile = argv[1];
 	ofile = argv[2];
-	threshold = atoi(argv[3]);
+	//threshold = atoi(argv[3]);
 
 	if (( fp = fopen( ifile, "rb" )) == NULL )
 	{
